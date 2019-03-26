@@ -1,0 +1,5 @@
+<div class="container mt-5">
+  <h1 class="border-bottom"><%= @article.title %> <%= link_to raw("<small><i class='fas fa-pencil-alt'></i></small>"), edit_article_path %>&nbsp<%= link_to raw("<small><i class='far fa-trash-alt'></i></small>"), article_path(@article), method: :delete, data: { confirm: "Are you sure?"} %></h1>
+  <p><%= @article.content %></p>
+  <img src="https://source.unsplash.com/random" alt="" width="700px">
+</div>
